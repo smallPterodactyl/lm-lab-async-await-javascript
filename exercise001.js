@@ -11,4 +11,17 @@ const promise = new Promise((resolve, reject) => {
 	}
 });
 
-// Your solution(s) to exercise001 here!
+//Try to generate an even integer
+
+//Handle if outcome is successful (integer is even)
+promise.then((response) => {
+	console.log (`Yay! Promise resolved with response: ${response}`)
+});
+
+//Handle if outcome is unsuccessful (odd integer, or another event)
+
+ 
+
+
+
+
