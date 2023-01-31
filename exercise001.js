@@ -12,11 +12,18 @@ const promise = new Promise((resolve, reject) => {
 });
 
 //Try to generate an even integer
+promise
 
-//Handle if outcome is successful (integer is even)
-promise.then((response) => {
+  //Success: even integer
+  .then((response) => {
 	console.log (`Yay! Promise resolved with response: ${response}`)
-});
+  })
+
+  //Failure: odd integer, or some other error
+  .catch((response) => {
+	console.log (`Boo. Promise rejected with response: ${response}`)
+
+  });
 
 //Handle if outcome is unsuccessful (odd integer, or another event)
 
