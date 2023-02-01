@@ -11,6 +11,24 @@ const promise = new Promise((resolve, reject) => {
 	}
 });
 
+/*Async function*/
+async function getRandomInt() {
+
+  const randomInt = Math.floor(Math.random() * 10);
+
+  if (randomInt % 2 === 0) {
+    // Success
+    setTimeout(() => resolve('done'), 2000);
+	} else {
+	  // Failure
+	  setTimeout(() => reject('error'), 2000);
+	}
+  };
+
+  try { randomInt() ('I succeeded') } 	
+	catch { console.log ('I failed') } 
+	finally { console.log ('I ran the async function anyway') }
+
 //Try to generate an even integer
 promise
 
