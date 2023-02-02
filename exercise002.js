@@ -20,7 +20,7 @@ async function fetchDataAgain (apiEndPoint) {
     console.log (json);
   }
 
-  catch {
+  catch (error) {
     
     console.error (error);
   }
